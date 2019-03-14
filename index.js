@@ -1,24 +1,8 @@
-// function greeting(message){
-// 	return alert(`${message} everyone`);
-// }
-
-// greeting('Hello');
-
-// let greeting = (message) => alert(`${message} everyone`);
-// greeting('Hello');
-
-
-let createBlog = (title,body) =>{
-	if (!title){
-		throw new Error('A title is required');
-	}
-
-	if (!body){
-		throw new Error('A body is required');
-	}
-
-	return alert(`${title} - ${body}`);
-
+var name = 'Everest';
+var height =8848;
+var output =function(){
+	console.log(`Mt. ${this.name} is ${this.height} meters tall`)
 }
 
-createBlog('titleOfBlog','blog body');
+var adventureClimbing ={name, height, output};
+adventureClimbing.output();
